@@ -35,7 +35,6 @@ User is navigated to the checkout information page even though no items are in t
 
 This could lead to confusion or incorrect orders in a real-world scenario. Most e-commerce platforms prevent checkout with an empty cart.
 
-## Screenshot / Logs
 
 
 
