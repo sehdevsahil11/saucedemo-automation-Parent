@@ -37,6 +37,5 @@ This could lead to confusion or incorrect orders in a real-world scenario. Most 
 
 ## Screenshot / Logs
 
-*(Optional: You can take a screenshot if you're submitting this somewhere)*
 
 
