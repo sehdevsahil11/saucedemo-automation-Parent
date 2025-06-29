@@ -38,7 +38,6 @@ saucedemo-automation-Parent/
 └── requirements.txt
 
 
-
 ---
 
 ## ✅ Tech Stack
