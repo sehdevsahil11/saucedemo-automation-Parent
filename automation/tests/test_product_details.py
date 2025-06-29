@@ -14,4 +14,3 @@ def test_product_details_page():
 
     product_page.hold_browser(30)  # Hold browser open for 30 seconds
     driver.quit()
-r
