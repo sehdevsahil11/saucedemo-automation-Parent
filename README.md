@@ -6,20 +6,37 @@ This repository contains automated tests for both a web-based e-commerce applica
 
 ## 📂 Project Structure
 
-automation/
+saucedemo-automation-Parent/
 │
-├── tests/
-│   ├── ui_tests/
-│   └── api_tests/
+├── automation/
+│   ├── pages/                         # Page Object Model classes
+│   │   ├── logout_page.py             # Logout functionality
+│   │   ├── login_page.py              # Login functionality
+│   │   ├── inventory_page.py          # Product listing page
+│   │   ├── product_details_page.py    # Single product detail view
+│   │   ├── cart_page.py               # Cart interactions
+│   │   └── checkout_page.py           # Checkout workflow
+│   │
+│   └── tests/                         # UI test cases (Exercise 1)
+│       ├── test_login.py              # Login/logout scenarios
+│       ├── test_cart.py               # Add/remove items from cart
+│       ├── test_checkout.py           # Checkout flow tests
+│       ├── test_product_details.py    # Product detail validations
+│       ├── test_logout.py             # Logout scenarios
+│       └── test_filtering.py          # Product filtering tests
 │
-├── requirements.txt
-├── README.md
-├── TEST-STRATEGY.md
-├── TEST-PLAN.md
+├── tests_petstore_api/               # API test cases (Exercise 2)
+│   └── test_petstore_api.py          # CRUD operations on /pet endpoint
+│
 ├── EXERCISE-1.md
 ├── EXERCISE-2.md
 ├── BUGREPORT-1.md
-└── BUGREPORT-2.md
+├── BUGREPORT-2.md
+├── TEST-PLAN.md
+├── TEST-STRATEGY.md
+├── README.md
+└── requirements.txt
+
 
 ---
 
@@ -53,13 +70,15 @@ automation/
 
 ## 🚀 How to Run Tests
 
-### ✅ UI Tests – Exercise 1
+### ✅ Run all UI tests for SauceDemo – Exercise 1
 
-   pytest tests/ui_tests/test_saucedemo.py -v
+   pytest automation/tests/ -v
 
-### ✅ API Tests – Exercise 2
 
-   pytest tests/api_tests/test_petstore_api.py -v
+### ✅ Run all Petstore API tests – Exercise 2
+
+   pytest tests_petstore_api/ -v
+
 
 ---
 
