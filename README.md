@@ -1,38 +1,34 @@
-# 🧪 E-Commerce Test Automation Project – SauceDemo
+# 🧪 QA Automation Project – Saucedemo + Petstore API
 
-This project automates core end-to-end test scenarios for [SauceDemo](https://www.saucedemo.com/), a sample e-commerce web app, using Python, Selenium, and Pytest.
-
----
-
-## 📌 Project Goals
-
-- Demonstrate ability to build a clean automation framework
-- Cover both positive and negative test scenarios
-- Use PyTest + Selenium for UI test coverage
-- Structure code using Page Object Model (POM)
+This repository contains automated tests for both a web-based e-commerce application and a REST API service. The goal of this project is to demonstrate strong QA fundamentals through manual and automated test design, implementation, and execution using Python and PyTest.
 
 ---
 
-## ✅ Features Covered
+## 📂 Project Structure
 
-| Feature                | Test Type     | Status |
-|------------------------|---------------|--------|
-| Login (valid/invalid)  | Manual + Auto | ✅     |
-| Product Listing Page   | Manual + Auto | ✅     |
-| Product Details Page   | Manual + Auto | ✅     |
-| Cart Add/Remove        | Manual + Auto | ✅     |
-| Checkout Flow          | Manual + Auto | ✅     |
-| Logout Functionality   | Manual + Auto | ✅     |
+automation/
+│
+├── tests/
+│   ├── ui_tests/
+│   └── api_tests/
+│
+├── requirements.txt
+├── README.md
+├── TEST-STRATEGY.md
+├── TEST-PLAN.md
+├── EXERCISE-1.md
+├── EXERCISE-2.md
+├── BUGREPORT-1.md
+└── BUGREPORT-2.md
 
 ---
 
-## 🧰 Tech Stack
+## ✅ Tech Stack
 
-- Python 3.9
-- Selenium
-- PyTest
-- Page Object Model
-- Git + GitHub
+- Language: Python 3.8+
+- Test Framework: PyTest
+- UI Automation: Selenium WebDriver
+- API Testing: requests
 
 ---
 
@@ -40,74 +36,71 @@ This project automates core end-to-end test scenarios for [SauceDemo](https://ww
 
 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/your-username/saucedemo-automation.git
-    cd saucedemo-automation
-    ```
+   git clone https://github.com/your-username/qa-automation-project.git  
+   cd qa-automation-project
 
-2. Set up virtual environment:
+2. Create and activate virtual environment:
 
-    ```bash
-    python -m venv venv
-    ```
-
-    For macOS/Linux:
-    ```bash
-    source venv/bin/activate
-    ```
-
-    For Windows:
-    ```bash
-    venv\Scripts\activate
-    ```
+   python -m venv venv  
+   source venv/bin/activate     # macOS/Linux  
+   venv\Scripts\activate        # Windows
 
 3. Install dependencies:
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+   pip install -r requirements.txt
 
 ---
 
-## 🚀 How to Run UI Tests
+## 🚀 How to Run Tests
 
-```bash
-pytest tests/ui_tests/test_saucedemo.py -v
-```
+### ✅ UI Tests – Exercise 1
+
+   pytest tests/ui_tests/test_saucedemo.py -v
+
+### ✅ API Tests – Exercise 2
+
+   pytest tests/api_tests/test_petstore_api.py -v
 
 ---
 
-## 📁 Project Structure
+## 🧪 Exercise 1 – UI Automation for Saucedemo
 
-```
-automation/
-│
-├── pages/
-│   ├── login_page.py
-│   ├── inventory_page.py
-│   ├── cart_page.py
-│   ├── checkout_page.py
-│   └── product_details_page.py
-│
-├── tests/
-│   ├── test_login.py
-│   ├── test_cart.py
-│   ├── test_checkout.py
-│   ├── test_product_details.py
-│   └── test_logout.py
-│
-├── README.md
-└── requirements.txt
-```
+URL: https://www.saucedemo.com
+
+Covers login, product listings, filters, cart, checkout, logout.
+
+Reference files:
+- EXERCISE-1.md – Test cases
+- BUGREPORT-1.md – Bug report
+
+---
+
+## 🔗 Exercise 2 – API Testing for Swagger Petstore
+
+API URL: https://petstore.swagger.io/v2
+
+Covers CRUD for `/pet` endpoint, with positive and negative test cases.
+
+Reference files:
+- EXERCISE-2.md – API test cases
+- BUGREPORT-2.md – Bug report
 
 ---
 
 ## 📄 Documentation
 
-- 📌 [TEST-STRATEGY.md](./TEST-STRATEGY.md): Testing scope and goals  
-- 📌 [TEST-PLAN.md](./TEST-PLAN.md): Feature coverage and approach  
-- 📌 [EXERCISE-1.md](./EXERCISE-1.md): Detailed test cases  
-- 📌 [BUGREPORT-1.md](./BUGREPORT-1.md): UI bugs with severity and priority  
+- 📌 [TEST-STRATEGY.md](./TEST-STRATEGY.md): QA scope, types of testing, tools, CI readiness
+- 📌 [TEST-PLAN.md](./TEST-PLAN.md): Features under test, test approach, timeline
+- 📌 [EXERCISE-1.md](./EXERCISE-1.md): UI test cases for Saucedemo
+- 📌 [EXERCISE-2.md](./EXERCISE-2.md): API test cases for Petstore
+- 📌 [BUGREPORT-1.md](./BUGREPORT-1.md): UI bugs with severity/priority
+- 📌 [BUGREPORT-2.md](./BUGREPORT-2.md): API bugs with severity/priority
+
+---
+
+## 🤝 Contributions
+
+This repo is part of a QA automation project for learning and assessment.
 
 ---
 
@@ -115,3 +108,5 @@ automation/
 
 **Sahil Sehdev**  
 QA Engineer | Python | Selenium | Test Automation
+
+
