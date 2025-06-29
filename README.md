@@ -4,29 +4,18 @@ This repository contains automated tests for both a web-based e-commerce applica
 
 ---
 
+
 ## 📂 Project Structure
 
+```plaintext
 saucedemo-automation-Parent/
 │
 ├── automation/
-│   ├── pages/                       # Page Object Model classes
-│   │   ├── logout_page.py           # Logout functionality
-│   │   ├── login_page.py            # Login functionality
-│   │   ├── inventory_page.py        # Product listing page
-│   │   ├── product_details_page.py  # Single product detail view
-│   │   ├── cart_page.py             # Cart interactions
-│   │   └── checkout_page.py         # Checkout workflow
+│   ├── pages/       # Page Object Model classes
+│   ├── tests/       # UI test cases (Exercise 1)
 │
-│   ├── tests/                      # UI test cases (Exercise 1)
-│   │   ├── test_login.py           # Login/logout scenarios
-│   │   ├── test_cart.py            # Add/remove items from cart
-│   │   ├── test_checkout.py        # Checkout flow tests
-│   │   ├── test_product_details.py # Product detail validations
-│   │   ├── test_logout.py          # Logout scenarios
-│   │   └── test_filtering.py       # Product filtering tests
-│
-├── tests_petstore_api/             # API test cases (Exercise 2)
-│   └── test_petstore_api.py        # CRUD operations on /pet endpoint
+├── tests_petstore_api/  # API test cases (Exercise 2)
+│   └── test_petstore_api.py  # CRUD operations on /pet endpoint
 │
 ├── EXERCISE-1.md
 ├── EXERCISE-2.md
